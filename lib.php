@@ -78,12 +78,12 @@ function atto_pumukitmedia_params_for_js($elementid, $options, $fpoptions)
     }
 
     $params['date'] = $date;
-    $params['capability'] = get_capability();
+    $params['capability'] = get_capability_atto_pumukitmedia();
 
     return $params;
 }
 
-function get_capability()
+function get_capability_atto_pumukitmedia()
 {
     global $COURSE;
 
